@@ -20,7 +20,7 @@ function check() {
     var userPassword = document.getElementById("userPassword")
 
     // Check if stored data from the register form is equal to the one entered on the log in form
-    if (userEmail.value == storedEmail && userPassword.value == storedPassword) {
+    if (userEmail.value === storedEmail && userPassword.value === storedPassword) {
         alert('You are loged in.');
     } else {
         alert('ERROR.');
