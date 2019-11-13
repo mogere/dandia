@@ -1,3 +1,4 @@
+
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -36,28 +37,34 @@
     color: white;
     transform: rotateY(180deg);
   }
+/* Dominic css */
+
+
 /* IMPORT GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 /* IMPORT GOOGLE FONTS */
-.mynav {
-    background-color: teal !important;
+body {
+    font-family: Lato;
 }
 
+/* .mynav {
+    background-color: teal !important;
+} */
+
 .banner {
-    height: 50vh;
+    height: 92vh;
+    background: url(../images/ride.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .mytext {
     padding-top: 13vh;
-    font-family: Rye;
+    /* font-family: Rye; */
     font-size: 40px;
-}
-
-.find {
-    height: 42.61vh;
-    background-color: teal;
-    width: 100%;
 }
 
 .buttonpad {
