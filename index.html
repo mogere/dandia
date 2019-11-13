@@ -7,15 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dandia</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <main>
         <!-- NAVIGATION START -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Dandia</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mynav">
+            <a class="navbar-brand" href="#">Ride Along</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,27 +25,159 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">How It Works</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="nav-link">Register</a></li>
-                    <li><a href="#" class="nav-link">Login</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link" data-toggle="modal" data-target="#modalRegisterForm">Sign Up</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link" data-toggle="modal" data-target="#modalLoginForm">Login</a></li>
                 </ul>
             </div>
         </nav>
         <!-- NAVIGATION END -->
-
         <!-- BANNER START  Dominic -->
+        <div class="banner">
+            <div class="container-fluid">
+                <div class="mytext text-center">
+                    <img src="./images/mylogo/logo_transparent.png" class="img-fluid" alt="">
+                    <h1>Car Pooling Made Easier</h1>
+                    <hr>
+                    <p>Ride Along connects people with drivers travelling </p> 
+                    <p>the same direction with aim of sharing costs <br> and travelling conveniently</p>
+                    <p><hr></p>
+                </div>
+                <div class="text-center buttonpad">
+                    <button class="btn btn-primary">Reserve A Ride</button>
+                  &nbsp;  <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL FOR LOGIN -->
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+        </div>
 
-        <!-- BANNER END -->
-        <!-- FIND A RIDE START Dominic-->
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
 
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- END OF LOGIN MODAL -->
+        <!-- REGISTER MODAL START -->
+        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="orangeForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-deep-orange">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- REGISTER MODAL END -->
         <!-- FIND A RIDE END -->
 
         <!-- HOW IT WORKS START Tichi-->
+        <div class="container-fluid">
+            <div class="container text-center">
+                <p></p>
+                <h2>How it works</h2>
+                <p></p>
+            <div class="row">
+                <div class="col-md-4">
+                <div class="card">
+                    <div class="card-title"> </div>
+                    <div class="card-body text-center">
+                        <img src="img/book.png" alt="" class="image-fluid"><br><br>
+                        <p>Log on to the dandia app and log in to find a suitable ride or ride partner for you from a list of available partners.</p>
+                    </div>
+                    <div class="card-footer">
 
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card">
+                        <div class="card-title">  </div>
+                            <div class="card-body text-center">
+                                <img src="img/book.png" alt="" class="image-fluid"><br><br>
+                                <p>Find a matching ride partner with the suitable date, time and place and request to car pool with them</p>
+                            </div>
+                            <div class="card-footer">
+        
+                            </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-title">   
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="img/book.png" alt="" class="image-fluid"><br><br>
+                                <p>Get to agreed meet up point at the agreed upon time and connect with your car pool mate</p>
+                            </div>
+                            <div class="card-footer">
+        
+                            </div>
+                    </div>
+                </div>
+            </div>                        
+            </div>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-primary">Begin your Ride along journey</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
         <!-- HOW IT WORKS END -->
 
         <!-- OUR EXPERIENCE START Joseph-->

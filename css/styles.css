@@ -1,0 +1,32 @@
+/* Dominic css */
+
+/* IMPORT GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* IMPORT GOOGLE FONTS */
+body {
+    font-family: Lato;
+}
+
+/* .mynav {
+    background-color: teal !important;
+} */
+
+.banner {
+    height: 92vh;
+    background: url(../images/ride.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mytext {
+    padding-top: 13vh;
+    /* font-family: Rye; */
+    font-size: 40px;
+}
+
+.buttonpad {
+    padding-top: 17vh;
+}
