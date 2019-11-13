@@ -33,7 +33,7 @@
   }
   
   .flip-card-back {
-    background-color: teal;
+    background-color: #5de0e0;
     color: white;
     transform: rotateY(180deg);
   }
@@ -73,5 +73,5 @@ body {
 }
 
 .btn-primary{
-    background-color: teal;
+    background-color: #5de0e0;
 }
