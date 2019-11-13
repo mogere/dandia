@@ -30,3 +30,7 @@ body {
 .buttonpad {
     padding-top: 17vh;
 }
+
+.btn-primary{
+    background-color: teal;
+}
