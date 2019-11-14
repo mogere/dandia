@@ -19,8 +19,10 @@ function getInfo(){
   for(i=0;i<users.length;i++){
     
     if(email == users[i].email && password == users[i].password){
-      alert(users[i].username + " is logged in");
-      $(location).attr('href',`book.html`);
+      // alert(users[i].username + " is logged in");
+      event.preventDefault();
+      window.location.href = "book.html";
+      
       return
     }
     
@@ -34,12 +36,16 @@ function User(username,email,password){
 
 }
 function signUp(){
+  
   var email = document.getElementById("orangeForm-email").value;
   var password = document.getElementById("orangeForm-pass").value;
   var username = document.getElementById("orangeForm-name").value;
   // newuser = new User(username,email,password)
   // alert(email);
   users.push(new User(username,email,password));
+  localStorage.setItem()
   // alert(JSON.stringify(users));
-  console.log(users);
-}
+  event.preventDefault();
+  // console.log(users);
+  window.location.href = "book.html";
+};
