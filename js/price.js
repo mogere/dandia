@@ -12,5 +12,8 @@ function caculatePrice(passengers, locationScale){
     
 }
 function getData(){
-$("button").click()
+$("#reserve").click(function(){
+    var route = $(".uthiru").data();
+    alert(route);
+})
 }
