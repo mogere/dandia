@@ -176,8 +176,17 @@ segment-three h3 {
     background: #000;
     line-height: 75px;
 }
+/* kolum start */
+.driver_img{
+  height: 200px;
+  float: left;
+  
+}
+.cont{
+  text-align: center;
+}
 
-
+/* kolum end */
 
 
 
