@@ -35,7 +35,7 @@
 
 .flip-card-back {
     background-color: #d1eee9;
-    color: white;
+    color: rgb(70, 65, 65);
     transform: rotateY(180deg);
 }
 
@@ -197,7 +197,12 @@ body {
 .checked {
     color: orange;
   }
-
+.btn-primary{
+    background-color: teal;
+}
+.btn-primary:hover{
+    background-color: rgb(205, 214, 214);
+}
 /* kolum end */
 
 
