@@ -1,38 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Document</title>
+  <title>Dandia</title>
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="row ">
-      <div class="col-sm-6">
-        <div class="card w-75">
-          <img class="card-img-top driver_img w-50 driver_img" src="images/23june.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+  <main>
+    <!-- NAVIGATION START -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mynav fixed-top">
+      <a class="navbar-brand" href="#">Ride Along</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">How It Works</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item active"><a href="#" class="nav-link" data-toggle="modal"
+              data-target="#modalRegisterForm">Sign Up</a></li>
+          <li class="nav-item active"><a href="#" class="nav-link" data-toggle="modal"
+              data-target="#modalLoginForm">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVIGATION END -->
+    <br><br><br><br><br>
+    <!-- DRIVERS LIST START -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-center">
+              <div class="card-header">
+                ROUTE: Prestige to Cooperation(Uthiru)
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ride Along Driver</h5>
+                <p class="card-text"><strong>NAME:</strong> Ronald Kolum</p>
+                <p class="card-text"><strong>Car Make:</strong> Toyota</p>
+                <p class="card-text"><strong>TIME:</strong> 7:00 am</p>
+                <p class="card-text"><STRONG>RATING:</STRONG> <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span></p>
+                <a href="#" class="btn btn-primary">Reserve Seat</a>
+              </div>
+              <div class="card-footer text-success">
+                Online
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-center">
+              <div class="card-header">
+                ROUTE: GPO to Thika
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ride Along Driver</h5>
+                <p class="card-text"><strong>NAME:</strong> Philip Nyatichi</p>
+                <p class="card-text"><strong>Car Make:</strong> Suzuki</p>
+                <p class="card-text"><strong>TIME:</strong> 8:00 am</p>
+                <p class="card-text"><STRONG>RATING:</STRONG> <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span></p>
+                <a href="#" class="btn btn-primary">Reserve Seat</a>
+              </div>
+              <div class="card-footer text-danger">
+                Offline
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card w-75">
-          <img class="card-img-top w-50 driver_img" src="images/23jose.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-center">
+              <div class="card-header">
+                ROUTE: Moringa School to Mathare
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ride Along Driver</h5>
+                <p class="card-text">NAME: Dust Foot</p>
+                <p class="card-text"><strong>Car Make:</strong> Subaru</p>
+                <p class="card-text">TIME: 9.00 am</p>
+                <p class="card-text">RATING: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span></p>
+                <a href="#" class="btn btn-primary">Reserve Seat</a>
+              </div>
+              <div class="card-footer text-success">
+                Online
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-center">
+              <div class="card-header">
+                ROUTE: Kawangware to Kibera
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ride Along Driver</h5>
+                <p class="card-text">NAME: Joseph Muturi</p>
+                <p class="card-text"><strong>Car Make:</strong> Mitsubishi</p>
+                <p class="card-text">TIME: 10.00 am</p>
+                <p class="card-text">RATING: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span></p>
+                <a href="#" class="btn btn-primary">Reserve Seat</a>
+              </div>
+              <div class="card-footer text-success">
+                Online
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-center">
+              <div class="card-header">
+                ROUTE: Kangemi to GPO
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ride Along Driver</h5>
+                <p class="card-text">NAME: Kiprotich Korir</p>
+                <p class="card-text"><strong>Car Make:</strong> Honda</p>
+                <p class="card-text">TIME: 11.00 am</p>
+                <p class="card-text">RATING: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span></p>
+                <a href="#" class="btn btn-primary">Reserve Ride</a>
+              </div>
+              <div class="card-footer text-success">
+                Online
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-center">
+              <div class="card-header">
+                ROUTE: Prestige to Junction Mall
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ride Along Driver</h5>
+                <p class="card-text">NAME: YomZ Samora</p>
+                <p class="card-text"><strong>Car Make:</strong> Nissan</p>
+                <p class="card-text">TIME: 6.00 pm</p>
+                <p class="card-text">RATING: <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span></p>
+                <a href="#" class="btn btn-primary">Reserve Ride</a>
+              </div>
+              <div class="card-footer text-success">
+                Online
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
+
+    <!-- DRIVERS LIST END -->
+    <!-- USER EXPERIENCE START -->
+    <!-- PATNERS START DOMMIE-->
+    <section class="mt-4 text-center">
+
+      <!-- Dynamically loaded customer logotypes  -->
+
+      <!--Section: Logotypes-->
+      <section class="mt-4">
+
+        <h5 class="my-4">Trusted by: </h5>
+
+        <!-- Logo carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide pointer-event" data-ride="carousel"
+          data-interval="1800">
+          <div class="carousel-inner">
+            <!-- First slide -->
+            <div class="carousel-item">
+              <!--Grid row-->
+              <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-3 col-md-6 text-center
+align-items-center justify-content-center">
+                  <img src="./images/logo/ineos.png" class="img-fluid px-4" alt="Nike - logo" style="max-height: 40px">
+                </div>
+                <!--/First column-->
+                <!--Second column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                  <img src="./images/logo/jumia.png" class="img-fluid px-4" alt="Amazon - logo"
+                    style="max-height: 40px">
+                </div>
+                <!--/Second column-->
+
+                <!--Third column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                  <img src="./images/logo/family.png" class="img-fluid px-4" alt="Sony - logo" style="max-height: 40px">
+                </div>
+                <!--/Third column-->
+
+                <!--Fourth column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                  <img src="./images/logo/alliance.png" class="img-fluid px-4" alt="Samsung - logo"
+                    style="max-height: 40px">
+                </div>
+                <!--/Fourth column-->
+
+              </div>
+              <!--/Grid row-->
+            </div>
+            <!-- First slide -->
+
+            <!-- Second slide -->
+            <div class="carousel-item active carousel-item-left">
+              <!--Grid row-->
+              <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                  <img src="./images/logo/andela.png" class="img-fluid px-4" alt="Airbus - logo"
+                    style="max-height: 40px">
+                </div>
+                <!--/First column-->
+
+                <!--Second column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                  <img src="./images/logo/ntsa.png" class="img-fluid px-4" alt="Yahoo - logo" style="max-height: 40px">
+                </div>
+                <!--/Second column-->
+
+                <!--Third column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                  <img src="./images/logo/kenya.png" class="img-fluid px-4" alt="Deloitte - logo"
+                    style="max-height: 40px">
+                </div>
+                <!--/Third column-->
+
+                <!--Fourth column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                  <img src="./images/logo/safaricom.png" class="img-fluid px-4" alt="GE - logo"
+                    style="max-height: 40px">
+                </div>
+                <!--/Fourth column-->
+
+              </div>
+              <!--/Grid row-->
+            </div>
+            <!-- Second slide -->
+          </div>
+        </div>
+        <!-- Logo carousel -->
+
+      </section>
+      <!--/Section: Logotypes-->
+
+    </section>
+    <br>
+    <!-- PATNERS END DOMMIE -->
+    <!-- CONTACT US SECTION DOMMIE -->
+    <section id="contact">
+
+      <!-- Heading -->
+      <h2 class="mb-5 font-weight-bold text-center">Contact us</h2>
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-5 col-md-12">
+          <!-- Form contact -->
+          <form class="p-5 grey-text">
+            <div class="md-form form-sm"> <i class="fa fa-user prefix"></i>
+              <input type="text" id="form3" class="form-control form-control-sm">
+              <label for="form3">Your name</label>
+            </div>
+            <div class="md-form form-sm"> <i class="fa fa-envelope prefix"></i>
+              <input type="text" id="form2" class="form-control form-control-sm">
+              <label for="form2">Your email</label>
+            </div>
+            <div class="md-form form-sm"> <i class="fa fa-tag prefix"></i>
+              <input type="text" id="form32" class="form-control form-control-sm">
+              <label for="form34">Subject</label>
+            </div>
+            <div class="md-form form-sm"> <i class="fa fa-pencil prefix"></i>
+              <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"></textarea>
+              <label for="form8">Your message</label>
+            </div>
+            <div class="text-center mt-4">
+              <button class="btn btn-primary">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+            </div>
+          </form>
+          <!-- Form contact -->
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7 col-md-12">
+
+          <!--Grid row-->
+          <div class="row text-center">
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-3">
+
+              <p><i class="fa fa-map fa-1x mr-2 grey-text"></i>Ngong Lane Plaza</p>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-3">
+
+              <p><i class="fa fa-building fa-1x mr-2 grey-text"></i>Mon - Fri, 8:00-22:00</p>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-3">
+
+              <p><i class="fa fa-phone fa-1x mr-2 grey-text"></i>+254 723 252 294</p>
+
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <!--Google map-->
+          <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7905456584886!2d36.78239551414637!3d-1.3005269360071998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109dcb26a413%3A0xca1c503989df391d!2sNgong%20Lane%20Plaza!5e0!3m2!1sen!2ske!4v1573729980598!5m2!1sen!2ske"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+      <!-- CONTACT US END DOMMIE -->
+      <!-- FOOTER START Kolum-->
+      <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                <h3 class="ride1">Ride Along</h3>
+                <p class="paragraph">Hope in ride with us, <br>
+                  <h4>Spread the love</h4>
+                </p>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                <h3 class="ride2">Ride Along</h3>
+                <ul>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Event</a></li>
+                  <li><a href="#">Jobs</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                <h3 class="follow">Follow Us On</h3>
+                <p class="paragraph">Link with us to have fun</p>
+                <a href="#"><i class="fa fa-tumblr fa-3x"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+                <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+                <a href="#"><i class="fa fa-linkedin fa-3x"></i></a>
+                <a href="#"><i class="fa fa-pinterest fa-3x"></i></a>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+                <h2 class="news">News Letter</h2>
+                <p class="paragraph">Guys subscribe to our newsletter to connect with us</p>
+                <form action="">
+                  <input type="email">
+                  <!-- <input type="submit" value="subscribe"> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer-bottom-text paragraph">All Right Reserve by &copy;RideAlong.2019</p>
+      </footer>
+      <!-- FOOTER END -->
+
+  </main>
+
+  <!-- JQUERY -->
+  <script src="./js/jquery3.3.1.js"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- JAVASCRIPT LINK -->
+  <script src="./js/main.js"></script>
+
 </body>
+
 </html>
