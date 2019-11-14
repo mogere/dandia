@@ -175,7 +175,9 @@ segment-three h3 {
     background: #000;
     line-height: 75px;
 }
-
+.checked {
+    color: orange;
+  }
 
 
 
