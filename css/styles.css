@@ -55,7 +55,7 @@ body {
 } */
 
 .banner {
-    height: 92vh;
+    height: 95vh; /* edited by kolum */
     background: url(../images/ride.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,4 +74,7 @@ body {
 
 .btn-primary{
     background-color: teal;
+}
+.card{
+  /* height:200px; */
 }
