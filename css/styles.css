@@ -34,10 +34,14 @@
 }
 
 .flip-card-back {
-    background-color: #119191;
+    background-color: #d1eee9;
     color: white;
     transform: rotateY(180deg);
 }
+
+/* joseph css */
+/* Dominic css */
+
 
 /* joseph css */
 /* Dominic css */
@@ -73,69 +77,70 @@ body {
 }
 
 /* footer by karshe */
-p {
+.paragraph {
     color: #999;
     line-height: 25px;
 }
 
-h2,
-h3 {
+.ride1 .ride2 .follow .news {
     color: #fff;
 }
 
 .footer-top {
-    background: #111;
+    background: teal;
     padding: 40px 0;
+    margin-top: 50px;
+
 }
 
-.segment-one h3 {
+.segment-one>h3 {
     font-family: courgette;
     color: #fff;
     letter-spacing: 3px;
     margin: 10px 0;
 }
 
-.segment-one h2 {
+.segment-one>h2 {
     color: #fff;
     font-family: poppins;
     text-transform: uppercase;
 }
 
-.segment-two h3:before {
+.segment-two>h3:before {
     content: "|";
     color: #c65039;
     padding: 10px;
 }
 
-.segment-two ul {
+.segment-two>ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.segment-two ul li {
+.segment-two>ul>li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     line-height: 40px;
 }
 
-.segment-two ul li a {
+.segment-two>ul>li>a {
     color: #999;
     text-decoration: none;
 }
 
-segment-three h3 {
+.segment-three>h3 {
     color: #fff;
     font-family: poppins;
     text-transform: uppercase;
 }
 
-.segment-three h3:before {
+.segment-three>h3:before {
     content: "|";
     color: #c65039;
     padding: 10px;
 }
 
-.segment-three a {
+.segment-three>a {
     background: #494849;
     width: 40px;
     height: 40px;
@@ -143,37 +148,42 @@ segment-three h3 {
     border-radius: 50%;
 }
 
-.segment-three a i {
+.segment-three>a>i {
     font-size: 20px;
     color: #fff;
     padding: 10px 12px;
 }
 
-.segment-four h2 {
+.segment-four>h2 {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
 
-.segment-four h2:before {
+.segment-four>h2:before {
     content: "|";
     color: #c65039;
     padding-right: 10px;
 }
 
-.segment-four form input[type=submit] {
+.segment-four>form input[type=submit] {
     background: #c65039;
     border: none;
-    padding: 3px 15px;
-    margin-left: -5px;
+    /* padding: px 20px; */
+    margin-left: px;
     color: #fff;
     text-transform: uppercase;
+    float: right;
+}
+.segment-four>form {
+    display: flex;
 }
 
 .footer-bottom-text {
     text-align: center;
     background: #000;
     line-height: 75px;
+    margin-bottom: 0px;
 }
 .checked {
     color: orange;
