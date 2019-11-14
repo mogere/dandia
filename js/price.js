@@ -1,7 +1,7 @@
 var tripCost = 0;
 var passengers = 1;
 var locationScale = 1
-function claculatePrice(passengers, locationScale){
+function caculatePrice(passengers, locationScale){
     var price;
     if(locationScale===1)
      price = 500;
