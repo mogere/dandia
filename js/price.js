@@ -12,8 +12,13 @@ function caculatePrice(passengers, locationScale){
     
 }
 function getData(){
-$("#reserve").click(function(){
-    var route = $(".uthiru").data();
-    alert(route);
+    $("#reserve").click(function () {
+        $('#booked').modal('show')
+})
+}
+
+function getDriver(){
+    $("#reserved").click(function () {
+        $('#booked1').modal('show')
 })
 }
