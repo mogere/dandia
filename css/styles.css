@@ -59,7 +59,7 @@ body {
 } */
 
 .banner {
-    height: 92vh;
+    height: 95vh; /* edited by kolum */
     background: url(../images/ride.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,11 +185,20 @@ body {
     line-height: 75px;
     margin-bottom: 0px;
 }
+/* kolum start */
+.driver_img{
+  height: 200px;
+  float: left;
+  
+}
+.cont{
+  text-align: center;
+}
 .checked {
     color: orange;
   }
 
-
+/* kolum end */
 
 
 
