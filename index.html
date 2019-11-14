@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dandia</title>
+
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -43,7 +45,6 @@
         <div class="banner">
             <div class="container-fluid">
                 <div class="mytext text-center">
-                    <img src="./images/mylogo/logo_transparent.png" class="img-fluid" alt="">
                     <h1>Car Pooling Made Easier</h1>
                     <hr>
                     <p>Ride Along connects people with drivers travelling </p>
@@ -69,23 +70,29 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body mx-3">
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <input type="email" id="defaultForm-email" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-                        </div>
+                    <form>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="defaultForm-email" id="userEmail" class="form-control validate"
+                                    required>
+                                <label data-error="wrong" data-success="right" for="defaultForm-email">Your
+                                    email</label>
+                            </div>
 
-                        <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
-                            <input type="password" id="defaultForm-pass" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-                        </div>
+                            <div class="md-form mb-4">
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <input type="password" id="defaultForm-pass" id="userPassword"
+                                    class="form-control validate" required>
+                                <label data-error="wrong" data-success="right" for="defaultForm-pass">Your
+                                    password</label>
+                            </div>
 
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-default">Login</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-default" type="submit" value="submit">Login</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -101,28 +108,33 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body mx-3">
-                        <div class="md-form mb-5">
-                            <i class="fas fa-user prefix grey-text"></i>
-                            <input type="text" id="orangeForm-name" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <input type="email" id="orangeForm-email" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
-                        </div>
+                    <form id="myform">
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="orangeForm-name" class="form-control validate" required>
+                                <label data-error="wrong" data-success="right" id="name" for="orangeForm-name">Your
+                                    name</label>
+                            </div>
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="orangeForm-email" class="form-control validate" required>
+                                <label data-error="wrong" data-success="right" id="email" for="orangeForm-email">Your
+                                    email</label>
+                            </div>
 
-                        <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
-                            <input type="password" id="orangeForm-pass" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
-                        </div>
+                            <div class="md-form mb-4">
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <input type="password" id="orangeForm-pass" class="form-control validate" required>
+                                <label data-error="wrong" data-success="right" id="password" for="orangeForm-pass">Your
+                                    password</label>
+                            </div>
 
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-deep-orange">Sign up</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-deep-orange" value="submit" type="submit">Sign up</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -131,61 +143,49 @@
 
         <!-- HOW IT WORKS START Tichi-->
         <div class="container-fluid">
-            <div class="container text-center">
-                <p></p><br>
-                <h2>How it works</h2>
-                <p></p><br>
-            <div class="row">
-                <div class="col-md-4">
-                <div class="card">
-                    <div class="card-title"> </div>
-                    <div class="card-body text-center">
-                        <img src="img/book.png" alt="" class="image-fluid"><br><br>
-                        <p>Log on to the dandia app and log in to find a suitable ride or ride partner for you from a list of available partners.</p>
-                    </div>
-                    <div class="card-footer">
-
+            <div class="container">
+                <h5 class="text-center pt-4">How It Works</h5>
+                <div class="row">
+                    <div class="col-sm-4 py-2">
+                        <div class="card h-100 border-primary color">
+                            <img src="./images/login.svg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Log In</h3>
+                                <p class="card-text">Log on to the dandia app and log in to find a suitable ride or ride
+                                    partner
+                                    for you from a list of available partners.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-title"> </div>
-                            <div class="card-body text-center">
-                                <img src="img/book.png" alt="" class="image-fluid"><br><br>
-                                <p>Find a matching ride partner with the suitable date, time and place and request to
-                                    car pool with them</p>
-                            </div>
-                            <div class="card-footer">
-
+                    <div class="col-sm-4 py-2">
+                        <div class="card h-100 border-primary color">
+                            <img src="./images/my.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Find A Ride</h3>
+                                <p class="card-text">Find a matching ride partner with the suitable date, time and place
+                                    and
+                                    request to car pool with them</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-title">
-                            </div>
-                            <div class="card-body text-center">
-
-                                <img src="img/book.png" alt="" class="image-fluid"><br><br>
-                                <p>Get to agreed meet up point at the agreed upon time and connect with your car pool mate</p>
-
-                                <img src="img/book.png" alt="" class="image-fluid"><br><br>
-                                <p>Get to agreed meet up point at the agreed upon time and connect with your car pool mate; Begin a new and fun experience</p>
-
-                            </div>
-                            <div class="card-footer">
-
+                    <div class="col-sm-4 py-2">
+                        <div class="card h-100 border-primary color">
+                            <img src="./images/diver.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Meet Up</h3>
+                                <p class="card-text">
+                                    Get to agreed meet up point at the agreed upon time and connect with your car pool
+                                    mate;
+                                    Begin a new and fun experience</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center"><br><br>
-                            <button class="btn btn-primary">Begin your Ride along journey</button> <br><br>
-                        </div>
+                <div class="row">
+                    <div class="col-md-12 text-center"><br><br>
+                        <button class="btn btn-primary">Begin your Ride along journey</button> <br><br>
                     </div>
                 </div>
             </div>
@@ -194,84 +194,267 @@
 
         <!-- OUR STORY START Joseph-->
         <div class="container-fluid" id="cont">
-                    <div class="container text-center">
-                            <p></p>
-                            <h>OUR STORY</h>
-         <div class="row">
-          <div class="col-md-4">
-           <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./images/23jose.jpg" style="width:300px;height:300px;">
-              </div>
-            
-              <div class="flip-card-back">
-                <h1>Joseph Muturi</h1>
-                <p>I use ride along from about a year.Its perfect and affordable.</p>
-                <p>The expirience was superb and fun since you travel with your friends.</p>
-                <p>Ride along to the world</p>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="flip-card">
-                       <div class="flip-card-inner">
-                         <div class="flip-card-front">
-                           <img src="./images/23june.png" style="width:300px;height:300px;">
-                           </div>
-                           <div class="flip-card-back">
-                           <h1>June Mugure</h1>
-                             <p>I've used ride along for a month now.All is required its the application and internet access to the internet</p>
-                             <p>I'ts affordable since i shared the cost with my friends because we were going to the same destination</p>
-                             <p>Thank you ride along</p>
-                         </div>
-                      </div>
-                  </div>
-               </div>
-            <div class="col-md-4 ">
-             <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="./images/23kolum.jpeg" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Ronald Kolum</h1>
-                        <p>Ride Along has been amazing for me, it has saved me time and money. I can`t imagine doing without it. Public transport is such a hustle that's why I`m so grateful to RideAlong.</p>
-                        <p></p>
-                      </div>
-                   </div>
-               </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        
-        
-    
-        <!-- USER EXPERIENCE START -->
+            <div class="container text-center">
+                <p></p>
+                <h>OUR STORY</h>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/23jose.jpg" style="width:300px;height:300px;">
+                                </div>
 
+                                <div class="flip-card-back">
+                                    <h1>Joseph Muturi</h1>
+                                    <p>I use ride along from about a year.Its perfect and affordable.</p>
+                                    <p>The expirience was superb and fun since you travel with your friends.</p>
+                                    <p>Ride along to the world</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/23june.png" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>June Mugure</h1>
+                                    <p>I've used ride along for a month now.All is required its the application and
+                                           <p>Thank you ride along</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/23kolum.jpeg" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Ronald Kolum</h1>
+                                    <p>Ride Along has been amazing for me, it has saved me time and money. I can`t
+                                        imagine doing without it. Public transport is such a hustle that's why I`m so
+                                        grateful to RideAlong.</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- USER EXPERIENCE START -->
+        <!-- PATNERS START DOMMIE-->
+        <section class="mt-4 text-center">
+
+            <!-- Dynamically loaded customer logotypes  -->
+            
+<!--Section: Logotypes-->
+<section class="mt-4">
+
+<h5 class="my-4">Trusted by: </h5>
+
+<!-- Logo carousel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide pointer-event" data-ride="carousel" data-interval="1800">
+    <div class="carousel-inner">
+        <!-- First slide -->
+        <div class="carousel-item">
+            <!--Grid row-->
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-3 col-md-6 text-center
+align-items-center justify-content-center">
+                    <img src="./images/logo/ineos.png" class="img-fluid px-4" alt="Nike - logo" style="max-height: 40px">
+                </div>
+                <!--/First column-->
+                <!--Second column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                    <img src="./images/logo/jumia.png" class="img-fluid px-4" alt="Amazon - logo" style="max-height: 40px">
+                </div>
+                <!--/Second column-->
+
+                <!--Third column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                    <img src="./images/logo/family.png" class="img-fluid px-4" alt="Sony - logo" style="max-height: 40px">
+                </div>
+                <!--/Third column-->
+
+                <!--Fourth column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                    <img src="./images/logo/alliance.png" class="img-fluid px-4" alt="Samsung - logo" style="max-height: 40px">
+                </div>
+                <!--/Fourth column-->
+
+            </div>
+            <!--/Grid row-->
+        </div>
+        <!-- First slide -->
+
+        <!-- Second slide -->
+        <div class="carousel-item active carousel-item-left">
+            <!--Grid row-->
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                    <img src="./images/logo/andela.png" class="img-fluid px-4" alt="Airbus - logo" style="max-height: 40px">
+                </div>
+                <!--/First column-->
+
+                <!--Second column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                    <img src="./images/logo/ntsa.png" class="img-fluid px-4" alt="Yahoo - logo" style="max-height: 40px">
+                </div>
+                <!--/Second column-->
+
+                <!--Third column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                    <img src="./images/logo/kenya.png" class="img-fluid px-4" alt="Deloitte - logo" style="max-height: 40px">
+                </div>
+                <!--/Third column-->
+
+                <!--Fourth column-->
+                <div class="col-lg-3 col-md-6 text-center align-items-center justify-content-center">
+                    <img src="./images/logo/safaricom.png" class="img-fluid px-4" alt="GE - logo" style="max-height: 40px">
+                </div>
+                <!--/Fourth column-->
+
+            </div>
+            <!--/Grid row-->
+        </div>
+        <!-- Second slide -->
+    </div>
+</div>
+<!-- Logo carousel -->
+
+</section>
+<!--/Section: Logotypes-->
+
+          </section>
+          <br>
+        <!-- PATNERS END DOMMIE -->
+        <!-- CONTACT US SECTION DOMMIE -->
+        <di id="contact" class="py-5 wow fadeIn" style="background-color: rgb(238, 238, 238); visibility: visible; animation-name: fadeIn;">
+
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5 text-dark">Contact us</h2>
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto mb-5">Ride Along is always there for your service. Feel free to contact us.</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-9 mb-md-0 mb-5">
+
+                    <form>
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                            <input type="text" id="contact-name" class="form-control">
+                            <label for="contact-name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                            <input type="text" id="contact-email" class="form-control">
+                            <label for="contact-email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                            <input type="text" id="contact-Subject" class="form-control">
+                            <label for="contact-Subject" class="">Subject</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                        <!-- Grid row -->
+                        <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                            <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                            <label for="contact-message">Your message</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary btn-md waves-effect waves-light">Send</a>
+                    </div>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                        <i class="fa fa-map-marker fa-2x purple-text"></i>
+                        <p>Ngong Lane Plaza 3rd Floor</p>
+                        </li>
+                        <li>
+                        <i class="fa fa-phone fa-2x mt-4 purple-text"></i>
+                        <p>+254 723 252 294</p>
+                        </li>
+                        <li>
+                        <i class="fa fa-envelope fa-2x mt-4 purple-text"></i>
+                        <p class="mb-0">contact@ridealong.com</p>
+                        </li>
+                    </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </div>
+        <!-- CONTACT US END DOMMIE -->
         <!-- FOOTER START Kolum-->
         <footer>
         <div class="footer-top">
           <div class="container">
               <div class="row">
                   <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-                      <h3>Ride Along</h3>
-                      <p>Hope in ride with us, <br><h4>Spread the love</h4></p>
+                      <h3 class="ride1">Ride Along</h3>
+                      <p class="paragraph">Hope in ride with us, <br><h4>Spread the love</h4></p>
                   </div>
                   <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-                      <h3>Ride Along</h3>
+                      <h3 class="ride2">Ride Along</h3>
                       <ul>
-                          <li><a href="#">support</a></li>
-                          <li><a href="#">blog</a></li>
-                          <li><a href="#">event</a></li>
-                          <li><a href="#">career</a></li>
+                          <li><a href="#">Support</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Event</a></li>
+                          <li><a href="#">Jobs</a></li>
                       </ul>
                   </div>
                   <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-                      <h3>Follow Us On</h3>
-                      <p>Link with us to have fun</p>
+                      <h3 class="follow">Follow Us On</h3>
+                      <p class="paragraph">Link with us to have fun</p>
                       <a href="#"><i class="fa fa-tumblr fa-3x"></i></a>
                       <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
                       <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
@@ -279,21 +462,22 @@
                       <a href="#"><i class="fa fa-pinterest fa-3x"></i></a>
                   </div>
                   <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-                      <h2>News Letter</h2>
-                      <p>Guys subsceibe to ournewsletter to connct with us</p>
+                      <h2 class="news">News Letter</h2>
+                      <p class="paragraph">Guys subscribe to our newsletter to connect with us</p>
                       <form action="">
-                          <input type="email"> 
+                          <input type="email">
                           <input type="submit" value="subscribe">
                       </form>
                   </div>
               </div>
           </div> 
         </div>
-        <p class="footer-bottom-text">All Right Reserve by &copy;RideAlong.2019</p>
+        <p class="footer-bottom-text paragraph">All Right Reserve by &copy;RideAlong.2019</p>
     </footer>
         <!-- FOOTER END -->
 
     </main>
+
     <!-- JQUERY -->
     <script src="./js/jquery3.3.1.js"></script>
     <!-- BOOTSTRAP JS -->
