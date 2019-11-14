@@ -11,3 +11,6 @@ function caculatePrice(passengers, locationScale){
      tripCost = Math.ceil(price/passengers);
     
 }
+function getData(){
+$("button").click()
+}
