@@ -8,7 +8,8 @@ Link to site https://github.com/mogere/dandia
 |feature     |Description      |
 |------------|------------------
 |User interface | Basic look of the website|
-|Login modal |users log in and are able to see available drivers|
+|Login modal |users log in and are able to get authenticated|
+|Driver's list |Afterusers log in they are able to see available drivers|
 
 ### Landing page
 ![Landing page](img/landing.png)
