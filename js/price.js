@@ -18,7 +18,7 @@ function getData(){
 }
 
 function getDriver(){
-    $("#reserved").click(function () {
+    $("#reserve1").click(function () {
         $('#booked1').modal('show')
 })
 }
