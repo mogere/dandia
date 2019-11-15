@@ -12,5 +12,12 @@ function caculatePrice(passengers, locationScale){
     
 }
 function getData(){
-$("button").click()
+    $("#reserve").click(
+        $('#booked').modal('show'))
+}
+
+function getDriver(){
+    $("#reserve1").click(
+        $('#booked1').modal('show')
+)
 }
