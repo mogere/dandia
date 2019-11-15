@@ -36,7 +36,7 @@ function signUp(){
   
   var email = document.getElementById("orangeForm-email").value;
   var password = document.getElementById("orangeForm-pass").value;
-  var username = document.getElementById("orangeForm-name").value;
+  // var username = document.getElementById("orangeForm-name").value;
   var newEmail = localStorage.getItem(email);
   if (newEmail != null){
     alert("user " + email + "already registered. kindly register using another email");
