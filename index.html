@@ -33,7 +33,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item active"><a href="#" class="nav-link" data-toggle="modal"
+                    <li class="nav-item active" id="btnsignup"><a href="#"  class="nav-link" data-toggle="modal"
                             data-target="#modalRegisterForm">Sign Up</a></li>
                     <li class="nav-item active"><a href="#" class="nav-link" data-toggle="modal"
                             data-target="#modalLoginForm">Login</a></li>
@@ -90,7 +90,7 @@
 
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
-                            <button class="btn btn-default" type="submit" value="submit" onclick="getInfo()"></button>Login</button>
+                            <button class="btn btn-default" type="submit" value="submit" onclick="getInfo()">Login</button>
                         </div>
                     </form>
                 </div>
@@ -136,6 +136,9 @@
                         <div class="modal-footer d-flex justify-content-center">
                             <button class="btn btn-deep-orange" value="submit" type="submit" onclick="signUp()">Sign up</button>
                         </div>
+                        <div class="alert alert-danger" id="useralert" role="alert">
+                                Email already already has an account. Kindly sign up using a different email!
+                              </div>
                     </form>
                 </div>
             </div>

@@ -1,3 +1,7 @@
+$(function(){
+  $("#useralert").hide();
+})
+
 var users = [{
   username : "Kolum",
   email:"kolumronnie@gmail.com",
@@ -15,16 +19,17 @@ function getInfo(){
   
   var password = document.getElementById("defaultForm-pass").value;
   var newPassword = localStorage.getItem(email);
-    if(email != null && password == newPassword){
-      alert(email + " is logged in");
+    if(email != null && password == newPassword){  
       event.preventDefault();
       window.location.href = "book.html";
-      
+      event.preventDefault();
       return
     }
     
   
   alert("Wrong username or password");
+  event.preventDefault();
+      
 }
 function User(username,email,password){
   this.username = username;
@@ -39,14 +44,19 @@ function signUp(){
   // var username = document.getElementById("orangeForm-name").value;
   var newEmail = localStorage.getItem(email);
   if (newEmail != null){
-    alert("user " + email + "already registered. kindly register using another email");
+    event.preventDefault();
+    $("#useralert").show();
+    document.getElementById("myForm").reset();
+    
   }
   else{
     localStorage.setItem(email,password);
     event.preventDefault();
-    window.location.href = "book.html";
+    window.location.href = "index.html";
+    $("#btnsignup").hide();
+    event.preventDefault();
     return
   }
   event.preventDefault();
-  window.location.href = "index.html";
+  // window.location.href = "index.html";
 };
